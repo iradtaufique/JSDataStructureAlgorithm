@@ -67,6 +67,37 @@ function addSum(num) {
 addSum(3);
 ```
 
+### Equality, strict inequality and strict inequarity operators (==, ===, != and !==)
+
+`type coerscion`: javascript ability to convert from one datatype to onother in comparission
+
+Example:
+
+```
+1   ==  1  // true
+1   ==  2  // false
+1   == '1' // true
+"3" ==  3  // true
+```
+
+`strict operator` `===` this is the opesite of coersion, because it doesn't convert from one type to another
+
+Example:
+
+```
+3 ===  3  // true
+3 === '3' // false
+```
+
+Like the equality operator, the >, <, >=, <= will convert data types while comparing.
+
+
+## Logical Operators AND (&&), OR (||)
+
+`AND` operator return True when All Operands are True while `OR` operator return True when one of the operands is true
+
+
+
 
 
 
