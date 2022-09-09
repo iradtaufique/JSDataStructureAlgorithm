@@ -97,18 +97,105 @@ Like the equality operator, the >, <, >=, <= will convert data types while compa
 `AND` operator return True when All Operands are True while `OR` operator return True when one of the operands is true
 
 
+### Return on Objects and switch
 
 
 
+'
+'
+'
 
+### Testing objects for Property
 
+`.hasOwnProperty(propertyname)` is used a method that is used to check if the object has that property name.
 
+#### Example:
 
+```
+const myObj = {
+  top: "hat",
+  bottom: "pants"
+};
 
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
+```
 
+### Manipilating Complex Objects
 
+#### Example
+```
+const ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP"
+    ],
+    "gold": true
+  },
+  
+    {
+    "artist": "Punk",
+    "title": "Lazy",
+    "release_year": 1987,
+    "formats": [ 
+      "CD", 
+      "USB"
+    ],
+    "gold": False
+  }
+];
+```
 
+### Accessing nested Objects
 
+The subproperty of an objects can be accessed by chaining together the dot or brachet notation.
+
+#### Example:
+```
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+ourStorage.cabinet["top drawer"].folder2; // output will be secrets
+ourStorage.desk.drawer; // output will be stapler
+
+```
+
+### Accessing Nested Array
+
+Nested Array is simmilar to nested object so you can access nested arrays by chained bracket notation.
+
+#### Example
+
+```
+const ourPets = [
+{
+animalType: "cat",
+names: ["Meowzer", "Kit-cat"]
+},
+{
+animalType: "dog",
+names: ["Frankie", "Spot"]
+}];
+
+ourPets[0].names[1] // output will be kit-cat
+ourPets[1].names[0] // output will be Frankie
+
+```
 
 
 
