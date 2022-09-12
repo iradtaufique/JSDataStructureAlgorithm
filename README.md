@@ -218,6 +218,9 @@ console.log(arr[i][j])
 }
 ```
 
+### Do While Loop
+
+`do...while` loop will ensure that the code inside the loop will run at least once.
 
 
 
