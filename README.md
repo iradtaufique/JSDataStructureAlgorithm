@@ -197,8 +197,26 @@ ourPets[1].names[0] // output will be Frankie
 
 ```
 
+### Loopds
 
+=
+=
+=
 
+continue
+### Nesting For Loops
+Looping throught Multi Dimension Array Examples
+
+```
+const arr = [
+  [1,2], [3,4], [5,6]
+]
+for (let i=0; i<arr.length; i++){ // iterate througth the whole array
+for (let j=0; j<arr[i].lenght; j++){ // arr[i].length here we are iterating on the first sub array
+console.log(arr[i][j])
+}
+}
+```
 
 
 
