@@ -51,7 +51,7 @@ varriable can be declared using `let`, `var` and `const`.
 
 `declaring variable outside the function act as global variable, and declaring variable without var, let or const keyword act as global variable`.
 
-### undefiened returned by a function
+### undefined returned by a function
 
 a function can return an undefiened value when it doesnt not have returned value and it has been called.
 
@@ -97,17 +97,67 @@ Like the equality operator, the >, <, >=, <= will convert data types while compa
 `AND` operator return True when All Operands are True while `OR` operator return True when one of the operands is true
 
 
-### Return on Objects and switch
+### Javascrispt Objects
+
+objects are similar to array except that instead of using indexes to access and modifies data, object use `Properties`.
+
+#### Example:
+
+```
+const cat = {
+  "name": "Whiskers",
+  legs: 4,
+  tails: 1,
+  "enemies": ["Water", "Dogs"]
+};
+```
+
+you can omit double or single quotes on property name in case it is single-word-string-propery-name like `legs or tails`as it is on example above.
+
+### Access Object Properties with (.) Dot notation and ([]) bracket notation
+
+#### Object Example No1
+
+```
+const myObj = {
+  prop1: "val1,
+  prop2: "val2"
+  }
+  
+  // accessing prop1 value
+  const prop1val = myOb.prop1 // Using dot notaion
+  const prop2val = myObj["prop2"] // Using Bracket notation
+ ``` 
+### Updating Object Property
+
+By using the Previous Example Example No1 we can update prop1 value
+
+#### Example: 
+```
+myObj.prop1 = "val 1 updated" // using dot notation
+myObj["prop1"] = "val 1 updated" // using sqaure brachets
+
+```
+
+### Adding New Property to an objects
+
+The some way we have updated or modified an object is the some way we have to add new propery on an object.
 
 
+if property name exist: `update the value`.
 
-'
-'
-'
+if propety name does not exist: `add new property to on object`.
+
+
+### Delete Property from Javascript object
+
+```
+delete objectname.properyname;
+```
 
 ### Testing objects for Property
 
-`.hasOwnProperty(propertyname)` is used a method that is used to check if the object has that property name.
+`.hasOwnProperty(propertyname)` is a javascript method that is used to check if the object has cetain property name or not. `hasOwnProperty` return `true` when object has that property name ahterwise return `false`.
 
 #### Example:
 
@@ -150,6 +200,8 @@ const ourMusic = [
   }
 ];
 ```
+
+This is an array which contains one object inside. The object has various pieces of metadata about an album. It also has a nested `formats` array. If you want to add more album records, you can do this by adding records to the top level array. Objects hold data in a property, which has a key-value format. In the example above, `"artist": "Daft Punk"` is a property that has a key of `artist` and a value of `Daft Punk`.
 
 ### Accessing nested Objects
 
